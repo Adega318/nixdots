@@ -12,7 +12,7 @@
         pyright = { enable = true; };
         gopls = { enable = true; };
         terraformls = { enable = true; };
-        tsserver = { enable = false; };
+        ts-ls = { enable = false; };
         yamlls = { enable = true; };
         clangd = { enable = true; };
         java-language-server = { enable = true; };
