@@ -2,8 +2,9 @@
   services = {
     xserver = {
       enable = true;
-      displayManager.startx = {
+      displayManager.gdm = {
         enable = true;
+        wayland = true;
       };
       xkb = {
         layout = "es";
