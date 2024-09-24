@@ -1,6 +1,5 @@
 {
-  hardware.pulseaudio.enable = true;
-  sound.enable = true;
+  hardware.pulseaudio.enable = false;
 
   security.rtkit.enable = true;
   services.pipewire = {
@@ -10,6 +9,6 @@
       support32Bit = true;
     };
     pulse.enable = true;
-    wireplumber.enable = true;
+    jack.enable = true;
   };
 }

@@ -2,10 +2,8 @@
   services = {
     xserver = {
       enable = true;
-      desktopManager.gnome.enable = true;
-      displayManager.gdm = {
+      displayManager.startx = {
         enable = true;
-        wayland = true;
       };
       xkb = {
         layout = "es";
@@ -15,5 +13,16 @@
   };
 
   # Hyperland
-  programs.hyprland.enable = true;
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
+
+  xdg.portal = {
+    enable = true;
+    xdgOpenUsePortal = true;
+    config = {
+      hyprland.default = [ "hyprland" ];
+    };
+  };
 }
