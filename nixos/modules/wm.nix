@@ -1,4 +1,9 @@
-{
+{ pkgs, ... }: {
+  environment.systemPackages = [
+    pkgs.wayland
+    pkgs.wl-clipboard
+  ];
+
   services = {
     xserver = {
       enable = true;
