@@ -25,6 +25,7 @@
         yaml = [ "yamllint" "yamlfmt" ];
         c = [ "clang_format" ];
         java = [ "google_java_format" ];
+        ocaml = [ "ocamlformat" ];
       };
     };
   };

@@ -16,6 +16,7 @@
         yamlls = { enable = true; };
         clangd = { enable = true; };
         java-language-server = { enable = true; };
+        ocamllsp = { enable = true; };
       };
       keymaps = {
         silent = true;

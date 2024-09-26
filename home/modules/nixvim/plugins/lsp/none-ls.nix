@@ -36,6 +36,7 @@
           yamlfmt.enable = true;
           clang_format.enable = true;
           google_java_format.enable = true;
+          ocamlformat.enable = true;
         };
       };
     };

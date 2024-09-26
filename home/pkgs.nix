@@ -24,6 +24,7 @@
     gcc
     maven
     lazydocker
+    ledit
 
     # Mix
     pavucontrol
