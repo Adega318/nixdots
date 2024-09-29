@@ -1,7 +1,11 @@
 { pkgs, settings, ... }:
 
 {
-  imports = [ ./modules ./pkgs.nix ../nixos/modules/stylix.nix ];
+  imports = [
+    ./modules 
+    ./pkgs.nix 
+    ../nixos/modules/stylix.nix
+  ];
 
   programs.home-manager.enable = true;
   home = {
@@ -14,6 +18,8 @@
       (import ../scripts/wofi-powerctl.nix { inherit pkgs; })
     ];
   };
+
+  gtk.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 }

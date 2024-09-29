@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, settings, ... }: {
   environment.systemPackages = [
     pkgs.wayland
     pkgs.wl-clipboard
@@ -7,8 +7,11 @@
   services = {
     xserver = {
       enable = true;
-      displayManager.gdm = {
+      displayManager.lightdm = {
         enable = true;
+        background = settings.wallpaper;
+        greeter.enable = true;
+        greeters.slick.enable = true;
       };
       xkb = {
         layout = "es";

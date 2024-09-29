@@ -1,4 +1,4 @@
-{ ... }:
+{ settings, ... }:
 
 {
   wayland.windowManager.hyprland = {
@@ -78,7 +78,11 @@
         disable_hyprland_logo = true;
       };
 
-      exec-once = [ "waybar" ];
+      exec-once = [
+        "swww init"
+        "swww img ${settings.wallpaper}"
+        "waybar &"
+      ];
 
       bind = [
         "$mainMod, V, exec, cliphist list | wofi --dmenu | cliphist decode | wl-copy"

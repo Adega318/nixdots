@@ -11,6 +11,7 @@
     obsidian
     blender
     dia
+    korganizer
 
     # Games
     lutris
