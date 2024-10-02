@@ -7,12 +7,7 @@
   services = {
     xserver = {
       enable = true;
-      displayManager.lightdm = {
-        enable = true;
-        background = settings.wallpaper;
-        greeter.enable = true;
-        greeters.slick.enable = true;
-      };
+      displayManager.gdm.enable = true;
       xkb = {
         layout = "es";
         variant = "";

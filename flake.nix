@@ -25,7 +25,7 @@
         hostName = "LaNxAd";
         userName = "adega";
         email = "eadegafernandez@gmail.com";
-        wallpaper = ./wallpapers/sunsetBlue.png;
+        wallpaper = ./wallpapers/mage.png;
       };
     in
     {
