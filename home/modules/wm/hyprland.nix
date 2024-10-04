@@ -103,11 +103,17 @@
         "$mainMod, K,    movefocus, u"
         "$mainMod, J,  movefocus, d"
 
-        # Moving windows
+        # Replace windows
         "$mainMod SHIFT, H,  swapwindow, l"
         "$mainMod SHIFT, L, swapwindow, r"
         "$mainMod SHIFT, K,    swapwindow, u"
         "$mainMod SHIFT, J,  swapwindow, d"
+
+        # Move windows
+        "$mainMod ALT, L, moveactive, 30 0"
+        "$mainMod ALT, H, moveactive, -30 0"
+        "$mainMod ALT, K, moveactive, 0 -30"
+        "$mainMod ALT, J, moveactive, 0 30 "
 
         # Window resizing                     X  Y
         "$mainMod CTRL, H,  resizeactive, -10 0"
