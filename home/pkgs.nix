@@ -3,6 +3,9 @@
 {
   home.packages = with pkgs; [
     # Apps
+    firefox
+    opera
+    chromium
     discord
     betterdiscordctl
     vscode
